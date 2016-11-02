@@ -5,15 +5,15 @@ Reveal.initialize({
   center: true,
   transition: 'slide',
   dependencies: [
-    {src: 'components/moz-reveal.js/lib/js/classList.js', condition: function () {
+    {src: 'http://github.mozilla-tunisia.org/reveal.js/lib/js/classList.js', condition: function () {
         return !document.body.classList;
       }},
-    {src: 'components/moz-reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
+    {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
         return !!document.querySelector('pre code');
       }, callback: function () {
         hljs.initHighlightingOnLoad();
       }},
-    {src: 'components/moz-reveal.js/plugin/zoom-js/zoom.js', async: true},
-    {src: 'components/moz-reveal.js/plugin/notes/notes.js', async: true}
+    {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/zoom-js/zoom.js', async: true},
+    {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/notes/notes.js', async: true}
   ]
 });
