@@ -5,6 +5,7 @@ Reveal.initialize({
   center: true,
   transition: 'slide',
   dependencies: [
+    { src: 'js/remote-code.js' },
     {src: 'components/moz-reveal.js/lib/js/classList.js', condition: function () {
         return !document.body.classList;
       }},
@@ -12,6 +13,7 @@ Reveal.initialize({
         return !!document.querySelector('pre code');
       }, callback: function () {
         hljs.initHighlightingOnLoad();
+        fetchAllCode();
       }},
     {src: 'components/moz-reveal.js/plugin/zoom-js/zoom.js', async: true},
     {src: 'components/moz-reveal.js/plugin/notes/notes.js', async: true}
